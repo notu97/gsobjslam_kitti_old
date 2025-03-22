@@ -83,7 +83,7 @@ def plot_3D_pts(array):
 
     plt.show()
 
-def plot_bboxes(image_path, bboxes):
+def plot_bboxes(image, bboxes):
     """
     Plots bounding boxes on an RGB image.
     
@@ -91,9 +91,6 @@ def plot_bboxes(image_path, bboxes):
         image_path (str): Path to the RGB image.
         bboxes (torch.Tensor): Tensor of shape (N, 4) with bounding boxes in (x, y, w, h) format.
     """
-    # Load image
-    image = Image.open(image_path).convert("RGB")
-    
     # Create a figure and axis
     fig, ax = plt.subplots(1)
     ax.imshow(image)

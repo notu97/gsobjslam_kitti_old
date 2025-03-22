@@ -69,7 +69,7 @@ class KITTI(BaseDataset):
             "10": "2011_09_30_drive_0034"
         }
         self.seq_lenths = {0: 4541, 5: 2761, 6: 1101, 8: 4071}
-        self.drive_dict = {0: "0042", 5: "0020", 6: "0020", 8: "0020"}
+        self.drive_dict = {0: "0027", 5: "0020", 6: "0020", 8: "0020"}
         self.seq_len = self.seq_lenths[self.seq_id]
         self.date_drive = self.mapping["%02d" % self.seq_id]
         self.date = self.date_drive[:10]

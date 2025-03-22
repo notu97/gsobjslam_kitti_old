@@ -7,3 +7,7 @@ car_pose_estimator/smplx/__pycache__/
 car_pose_estimator/models/.ipynb_checkpoints/Pose from Semantic Keypoints-checkpoint.ipynb
 car_pose_estimator/utils/__pycache__/
 car_pose_estimator/utils/.ipynb_checkpoints/plotting-checkpoint.py
+__pycache__/
+aux_data/keypoint_models/
+output/
+yolo_models/

@@ -6,9 +6,9 @@ seed: 0
 # data
 input_path: null
 output_path: output/KITTI/0
-kitti_root: /mnt/e/datasets/kitti
-raw_data_root: /mnt/e/datasets/kitti_raw
-semkitti_root: /mnt/e/datasets/semantickitti/sequences
+kitti_root: /home/shiladitya/Dataset/data_odometry_color/dataset/
+raw_data_root: /home/shiladitya/Dataset/kitti_raw/
+semkitti_root: /home/shiladitya/Dataset/SemanticKITTI/dataset/sequences
 semkitti_config: third_party/semantic_kitti_api/config/semantic-kitti-all.yaml
 seq_id: 0
 # mapping
