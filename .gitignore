@@ -1,0 +1,9 @@
+car_pose_estimator/models/__pycache__/
+car_pose_estimator/models/large_model/__pycache__/
+car_pose_estimator/models/small_model/__pycache__/
+car_pose_estimator/models/output/
+car_pose_estimator/output/
+car_pose_estimator/smplx/__pycache__/
+car_pose_estimator/models/.ipynb_checkpoints/Pose from Semantic Keypoints-checkpoint.ipynb
+car_pose_estimator/utils/__pycache__/
+car_pose_estimator/utils/.ipynb_checkpoints/plotting-checkpoint.py
