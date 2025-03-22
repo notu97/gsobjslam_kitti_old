@@ -10,7 +10,7 @@ from datasets import *
 from associator import Associator
 from mapper import Mapper
 from logger import Logger
-
+from car_pose_estimator import PoseEstimation
 
 class GS_OBJ_SLAM(object):
 
@@ -29,6 +29,7 @@ class GS_OBJ_SLAM(object):
         self.cur_gt_color = None
         self.cur_lidar = None
         self.cur_est_c2w = None
+        self.pose_est_obj = PoseEstimation()
 
     def track_objects(self, rgb) -> ultralytics.engine.results.Results:
 
@@ -72,6 +73,12 @@ class GS_OBJ_SLAM(object):
                 continue
             # update associations
             self.update_associations(yolo_result)
+
+            # Estimate the pose of each car in regular camera frame
+
+            car_poses = self.pose_est_obj.GetCarPoses(self.cur_gt_color, yolo_result)
+            print(car_poses)
+            # break
 
             # iterate over objects
             for i in range(len(yolo_result)):
